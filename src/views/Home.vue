@@ -357,6 +357,7 @@ export default {
                     'Authorization': `Bearer ${this.$token}`
                 }
             }).then((result)=>{
+              console.log(result.data);
                 this.allSales = result.data
                 this.salesLength = result.data.length
                 this.getTotalEarnings()
