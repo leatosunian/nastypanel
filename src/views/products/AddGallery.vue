@@ -276,7 +276,7 @@ export default {
                 text: 'Selecciona una imagen para subir',
                 type: 'error'
               })
-        } else{
+        } else {
             const formData = new FormData()
             formData.append('product', this.$route.params.id)
             formData.append('image', this.uploadedImg)
