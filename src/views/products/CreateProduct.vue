@@ -319,7 +319,7 @@
           formData.append('subcategory', this.product.subcategory)
           formData.append('image', this.product.image)
           formData.append('str_variant', this.product.str_variant)
-
+          console.log(this.product);
           axios.post(this.$url+'/products/add', formData, {
             headers: {
               "Content-Type": 'multipart/form-data',
